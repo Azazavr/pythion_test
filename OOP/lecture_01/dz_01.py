@@ -35,4 +35,4 @@ book_four = Books(author="Уильям Шекспир", name="Гамлет", yea
 
 print(book_one == book_two)
 print(book_one == book_four)
-
+print(book_one.get_genre())
