@@ -1,4 +1,37 @@
-print("Вношу корректив в код для проверки нового коммита")
+class Car:
+
+    def __init__(self,name, years_old, price):
+
+        self.years_old = years_old
+        self.price = price
+        self.name = name
+
+    def __str__(self):
+        return f' {self.name}, {self.years_old}, {self.price}'
+
+
+class Car_store:
+    list = []
+
+    def addAuto_to_list(self, *q):
+        self.list.extend(*q)
+
+
+
+class Seller:
+    def suggest(self):
+        for i in self.list:
+            print('купи машину : ' , i)
+
+mercedes = Car('мерс',60, 200000)
+
+djiga = Car('жига', 100, 23)
+
+store = Car_store()
+store.addAuto_to_list((mercedes, djiga))
+almost_sold = Seller()
+Seller.suggest(store)
+
 
 
 
