@@ -10,6 +10,7 @@ class MusicBand:
     def write_album(self, album):
         self.album.append(album)
 
+
 class Musican:
     def __init__(self, name, instrument):
         self.name = name
@@ -17,6 +18,7 @@ class Musican:
 
     def __str__(self):
         return f"{self.name} {self.instrument}"
+
 
 class Album:
     def __init__(self, song, genre):

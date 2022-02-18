@@ -1,36 +1,143 @@
-class Car:
-
-    def __init__(self,name, years_old, price):
-
-        self.years_old = years_old
-        self.price = price
-        self.name = name
-
-    def __str__(self):
-        return f' {self.name}, {self.years_old}, {self.price}'
-
-
-class Car_store:
-    list = []
-
-    def addAuto_to_list(self, *q):
-        self.list.extend(*q)
 
 
 
-class Seller:
-    def suggest(self):
-        for i in self.list:
-            print('купи машину : ' , i)
 
-mercedes = Car('мерс',60, 200000)
 
-djiga = Car('жига', 100, 23)
+# from tkinter import *
+#
+#
+# class Rectangle:
+#     def __init__(self):
+#         pass
+#
+#     def insert_rectangle(self):
+#         self.e1.insert(0, "рисуем квадрат")
+#     #где то тут зарыт косяк, который я пока не могу понять. Что должно приходить в self?
+#
+#
+# root = Tk()
+# but = Button(text="Квадрат", command=Rectangle.insert_rectangle())
+# e1 = Entry(width=50)
+# e1.pack()
+# but.pack()
+# root.mainloop()
 
-store = Car_store()
-store.addAuto_to_list((mercedes, djiga))
-almost_sold = Seller()
-Seller.suggest(store)
+
+
+# from tkinter import *
+#
+# clicks = 0
+#
+#
+# class Rectangle:
+#     def __init__(self):
+#         pass
+#
+#
+# def click_button():
+#     l1 = Label(text="Текст под кнопкой", font="Arial 16")
+#     l1.pack()
+#
+#
+# root = Tk()
+# root.title("Окно :)")
+# root.geometry("400x300+300+200")
+# btn = Button(text="Кнопка", bg='#d7d8e0', bd=0, command=click_button())
+# btn.pack()
+# root.mainloop()
+
+
+# from tkinter import *
+#
+# clicks = 0
+#
+#
+# def click_button():
+#     global clicks
+#     clicks += 1
+#     btn.config(text="Clicks {}".format(clicks))
+#
+#
+# root = Tk()
+# root.title("GUI на Python")
+# root.geometry("300x250")
+#
+# btn = Button(text="Clicks 0", background="#555", foreground="#ccc",
+#              padx="20", pady="8", font="16", command=click_button)
+# btn.pack()
+#
+# root.mainloop()
+
+
+
+
+# import tkinter as tk
+#
+#
+# class Main(tk.Frame):
+#     def __init__(self, root):
+#         super().__init__(root)
+#         self.init_main()
+#
+#     def init_main(self):
+#         btn_open_dialog = tk.Button(text="Кнопочка", command=self.open_dialog(), bg='#d7d8e0', bd=0,
+#                                     compound=tk.TOP)
+#         btn_open_dialog.pack(side=tk.TOP)
+#
+#     def open_dialog(self):
+#         pass
+#
+#
+# class Child(tk.Toplevel):
+#     def __init__(self):
+#         super().__init__(root)
+#
+#
+# if __name__ == "__main__":
+#     root = tk.Tk()
+#     app = Main(root)
+#     app.pack()
+#     root.title("Button test")
+#     root.geometry("650x450+300+200")
+#     root.resizable(False, False)
+#     root.mainloop()
+
+
+
+
+# class Car:
+#
+#     def __init__(self,name, years_old, price):
+#
+#         self.years_old = years_old
+#         self.price = price
+#         self.name = name
+#
+#     def __str__(self):
+#         return f' {self.name}, {self.years_old}, {self.price}'
+#
+#
+# class Car_store:
+#     list = []
+#
+#     def addAuto_to_list(self, *q):
+#         self.list.extend(*q)
+#
+#
+#
+# class Seller:
+#     def suggest(self):
+#         for i in self.list:
+#             print('купи машину : ' , i)
+#
+# mercedes = Car('мерс',60, 200000)
+#
+# djiga = Car('жига', 100, 23)
+#
+# store = Car_store()
+# store.addAuto_to_list((mercedes, djiga))
+# almost_sold = Seller()
+# Seller.suggest(store)
 
 
 
