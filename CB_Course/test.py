@@ -71,36 +71,36 @@
 
 
 
-# import tkinter as tk
-#
-#
-# class Main(tk.Frame):
-#     def __init__(self, root):
-#         super().__init__(root)
-#         self.init_main()
-#
-#     def init_main(self):
-#         btn_open_dialog = tk.Button(text="Кнопочка", command=self.open_dialog(), bg='#d7d8e0', bd=0,
-#                                     compound=tk.TOP)
-#         btn_open_dialog.pack(side=tk.TOP)
-#
-#     def open_dialog(self):
-#         pass
-#
-#
-# class Child(tk.Toplevel):
-#     def __init__(self):
-#         super().__init__(root)
-#
-#
-# if __name__ == "__main__":
-#     root = tk.Tk()
-#     app = Main(root)
-#     app.pack()
-#     root.title("Button test")
-#     root.geometry("650x450+300+200")
-#     root.resizable(False, False)
-#     root.mainloop()
+import tkinter as tk
+
+
+class Main(tk.Frame):
+    def __init__(self, root):
+        super().__init__(root)
+        self.init_main()
+
+    def init_main(self):
+        btn_open_dialog = tk.Button(text="Кнопочка", command=self.open_dialog(), bg='#d7d8e0', bd=0,
+                                    compound=tk.TOP)
+        btn_open_dialog.pack(side=tk.TOP)
+
+    def open_dialog(self):
+        pass
+
+
+class Child(tk.Toplevel):
+    def __init__(self):
+        super().__init__(root)
+
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = Main(root)
+    app.pack()
+    root.title("Button test")
+    root.geometry("650x450+300+200")
+    root.resizable(False, False)
+    root.mainloop()
 
 
 
